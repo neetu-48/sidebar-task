@@ -5,9 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
+
+    <section class="d-flex items-center justify-center min-vh-100 flex-column">
+        <div id="mySidebar" class="sidebar">
+            <h1 class="Sidebar">Sidebar</h1>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+            <a href="#" class="link">Link 3</a>
+            <a href="#" class="link">Link 4</a>
+            <a href="#" class="link">Link 5</a>
+        </div>
+
+        <div id="main">
+            <h1 class="Sidebar">Sidebar</h1>
+            <button class="open-btn" onclick="openNav()"> Open Sidebar</button>
+        </div>
+    </section>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "278px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
 </body>
 
